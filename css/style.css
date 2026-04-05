@@ -684,7 +684,7 @@ footer {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
   gap: 3rem;
 }
 
@@ -768,6 +768,7 @@ footer {
   .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
   .teams-grid { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
+  .footer-inner > .footer-brand { grid-column: 1 / -1; }
   .nav-links { display: none; }
   .nav-toggle { display: flex; }
   .nav-links.open {
@@ -790,3 +791,31 @@ footer {
   .hero-teams { gap: 1rem; }
   .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
 }
+
+/* ===== SOCIAL LINKS ===== */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.social-link:hover { color: var(--white); }
+
+.social-link svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  transition: color 0.2s;
+}
+
+.social-link:hover svg { color: var(--red); }

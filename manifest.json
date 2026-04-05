@@ -1,0 +1,41 @@
+{
+  "name": "Achilles Girls FC",
+  "short_name": "Achilles FC",
+  "description": "Official website of Achilles Girls FC — home of the Albion, Flamingos and Pumas.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#CC0000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/logo-club.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/logo-club.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Albion U11s",
+      "url": "/team-albion.html",
+      "icons": [{ "src": "images/logo-albion.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Flamingos U12s",
+      "url": "/team-flamingos.html",
+      "icons": [{ "src": "images/logo-flamingos.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Pumas U13s",
+      "url": "/team-pumas.html",
+      "icons": [{ "src": "images/logo-pumas.png", "sizes": "96x96" }]
+    }
+  ]
+}

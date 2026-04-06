@@ -819,3 +819,80 @@ footer {
 }
 
 .social-link:hover svg { color: var(--red); }
+
+/* ===== SPONSORS ===== */
+.sponsors-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.sponsor-card {
+  flex: 1;
+  min-width: 220px;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background: var(--grey-mid);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 2rem 1.5rem 1.5rem;
+  position: relative;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.sponsor-card:hover {
+  border-color: rgba(255,255,255,0.2);
+  transform: translateY(-3px);
+}
+
+.sponsor-card img {
+  max-height: 80px;
+  max-width: 100%;
+  object-fit: contain;
+  margin-bottom: 1.2rem;
+  filter: brightness(1);
+  transition: opacity 0.2s;
+}
+
+.sponsor-card:hover img { opacity: 0.9; }
+
+.sponsor-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--white);
+  text-align: center;
+}
+
+.sponsor-role {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+  text-align: center;
+}
+
+.sponsor-badge {
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--red);
+  color: var(--white);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.25rem 0.8rem;
+  white-space: nowrap;
+}
+
+.sponsor-badge--secondary {
+  background: var(--grey-light);
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seagulls U12s — Achilles Girls FC</title>
+  <link rel="icon" type="image/png" href="images/logo-Seagulls.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#CC0000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Achilles FC">
+  <link rel="apple-touch-icon" href="images/logo-club.png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    :root { --team-accent: #CC0000; }
+    .team-hero { background: linear-gradient(135deg, rgba(204,0,0,0.12) 0%, transparent 60%); }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html" class="nav-brand">
+      <img src="images/logo-club.png" alt="Achilles Girls FC">
+      <span>Achilles Girls FC</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-dropdown">
+        <a href="#" class="active">Teams ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="team-Seagulls.html"><img src="images/logo-Seagulls.png" alt=""> Seagulls U12s</a></li>
+          <li><a href="team-flamingos.html"><img src="images/logo-flamingos.png" alt=""> Flamingos U13s</a></li>
+          <li><a href="team-pumas.html"><img src="images/logo-pumas.png" alt=""> Pumas U14s</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- TEAM HERO -->
+  <div class="team-hero">
+    <div class="team-hero-inner">
+      <img src="images/logo-Seagulls.png" alt="Achilles Seagulls" class="team-hero-logo">
+      <div class="team-hero-text">
+        <p class="section-label">Under 12s - COMING SOON</p>
+        <h1>Achilles<br><span style="color:var(--red)">Seagulls</span></h1>
+        <p class="team-division"><!-- Add league/division name here when known --></p>
+        <div class="team-kit">
+          <span class="kit-label">Kit:</span>
+          <div class="kit-swatch" style="background:#CC0000;" title="Red"></div>
+          <div class="kit-swatch" style="background:#111; border-color:#444;" title="Black"></div>
+          <div class="kit-swatch" style="background:#CC0000;" title="Red socks"></div>
+          <span style="color:var(--text-muted); font-size:0.85rem; margin-left:4px;">Red &amp; black stripes · Black shorts · Red socks</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FA FULL TIME EMBEDS -->
+  <section class="fa-section">
+    <div class="container">
+      <div class="fa-tabs">
+        <button class="fa-tab active" data-panel="panel-table">League Table</button>
+        <button class="fa-tab" data-panel="panel-fixtures">Fixtures &amp; Results</button>
+      </div>
+
+      <!-- FIXTURES & RESULTS -->
+      <div id="panel-fixtures" class="fa-panel">
+        <!--
+          ========================================================
+          Seagulls — FIXTURES & RESULTS
+          ========================================================
+          Once the Seagulls U12s are registered on FA Full Time:
+          1. Find their fixtures/results widget code snippet.
+          2. DELETE the entire embed-placeholder <div> below.
+          3. PASTE your FA snippet in its place, e.g.:
+
+          <div class="fa-embed-wrapper" style="padding:1rem;">
+            <div id="lrep XXXXXXX" style="width:100%;">
+              Data loading....<a href="https://fulltime.thefa.com/...">click here</a>
+            </div>
+            <script type="text/javascript">var lrcode = 'XXXXXXX'</script>
+            <script type="text/javascript" src="https://fulltime.thefa.com/client/api/cs1.js"></script>
+          </div>
+
+          IMPORTANT: Change style="width: 350px" to style="width: 100%"
+          so it fills the page properly.
+          ========================================================
+        -->
+        <div class="embed-placeholder">
+          <span class="icon">📅</span>
+          <p><strong>Fixtures &amp; Results</strong> will appear here</p>
+          <p style="margin-top:0.5rem; font-size:0.85rem;">Results will appear here when active</p>
+          <a href="https://fulltime.thefa.com" target="_blank" class="btn" style="margin-top:1rem; display:inline-block;">View on FA Full Time ↗</a>
+        </div>
+      </div>
+
+      <!-- LEAGUE TABLE -->
+      <div id="panel-table" class="fa-panel active">
+        <!--
+          ========================================================
+          Seagulls — LEAGUE TABLE
+          ========================================================
+          This needs a SEPARATE snippet code from FA Full Time
+          (different lrcode number to the fixtures one above).
+
+          1. Get the league table widget snippet from FA Full Time.
+          2. DELETE the entire embed-placeholder <div> below.
+          3. PASTE your FA snippet in its place (same format as
+             the fixtures snippet — see instructions above).
+
+          NOTE: Each panel uses its own lrcode variable so they
+          won't conflict with each other on the page.
+          ========================================================
+        -->
+        <div class="embed-placeholder">
+          <span class="icon">🏆</span>
+          <p><strong>League Table</strong> will appear here</p>
+          <p style="margin-top:0.5rem; font-size:0.85rem;">League Table will appear here when active</p>
+          <a href="https://fulltime.thefa.com" target="_blank" class="btn" style="margin-top:1rem; display:inline-block;">View on FA Full Time ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM PHOTO -->
+  <section style="padding: 4rem 2rem; background: var(--black);">
+    <div class="container">
+      <p class="section-label fade-in">The Squad</p>
+      <h2 class="section-title fade-in">Team <span>Photo</span></h2>
+      <!--
+        TEAM PHOTO: When you have a photo for the Seagulls U12s, save it as
+        images/photo-Seagulls.jpg  and replace the placeholder div below with:
+
+        <div style="position:relative; overflow:hidden; border: 1px solid var(--grey-mid);">
+          <img src="images/photo-Seagulls.jpg"
+               alt="Achilles Seagulls U12s team photo"
+               style="width:100%; display:block; max-height:520px; object-fit:cover; object-position: center top;">
+          <div style="position:absolute; bottom:0; left:0; right:0; padding:1rem 1.5rem;
+                      background:linear-gradient(transparent, rgba(0,0,0,0.75));
+                      font-family:'Barlow Condensed',sans-serif; letter-spacing:2px;
+                      font-size:0.85rem; text-transform:uppercase; color:rgba(255,255,255,0.7);">
+            Achilles Seagulls · U12s
+          </div>
+        </div>
+      -->
+      <div class="embed-placeholder fade-in" style="min-height: 300px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+        <span class="icon">📸</span>
+        <p><strong>Team Photo</strong> coming soon</p>
+        <!--
+        <p style="margin-top:0.5rem; font-size:0.85rem;">Save your photo as <code style="background:rgba(255,255,255,0.08); padding:2px 6px;">images/photo-Seagulls.jpg</code> and update this page</p>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- BACK TO TEAMS -->
+  <section style="padding: 3rem 2rem; text-align:center; background: var(--grey);">
+    <div class="container">
+      <p style="color:var(--text-muted); font-family:'Barlow Condensed',sans-serif; letter-spacing:2px; text-transform:uppercase; margin-bottom:1.5rem;">Other Teams</p>
+      <div style="display:flex; justify-content:center; gap:1.5rem; flex-wrap:wrap;">
+        <a href="team-flamingos.html" class="hero-team-badge">
+          <img src="images/logo-flamingos.png" alt="Flamingos" style="width:60px;height:60px;object-fit:contain;">
+          <span>Flamingos U13s</span>
+        </a>
+        <a href="team-pumas.html" class="hero-team-badge">
+          <img src="images/logo-pumas.png" alt="Pumas" style="width:60px;height:60px;object-fit:contain;">
+          <span>Pumas U14s</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo-club.png" alt="Achilles Girls FC">
+        <p>Achilles Girls FC — developing girls' football across three age groups in a fun, competitive and supportive environment.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Teams</h4>
+        <ul>
+          <li><a href="team-Seagulls.html">Seagulls U12s</a></li>
+          <li><a href="team-flamingos.html">Flamingos U13s</a></li>
+          <li><a href="team-pumas.html">Pumas U14s</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Club</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="https://fulltime.thefa.com" target="_blank">FA Full Time</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/achillesgirlsfc" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+            Instagram
+          </a>
+          <a href="https://x.com/achillesgirlsfc" target="_blank" rel="noopener" aria-label="X (Twitter)" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            X (Twitter)
+          </a>
+          <a href="https://www.facebook.com/groups/achillesgirls" target="_blank" rel="noopener" aria-label="Facebook" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            Facebook
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Achilles Girls FC. All rights reserved.</span>
+      <span>Affiliated with Suffolk FA</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/sw.js");
+    }
+  </script>
+</body>
+</html>
